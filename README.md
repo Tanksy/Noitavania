@@ -1,5 +1,4 @@
 # Noitavania
-- - - -
 Noitavania is a vanilla-friendly (kinda) map expansion project that fills once empty space with new and expanded biomes, providing a metroidvania-like world experience.
 
 ## What does this mod do?
@@ -14,7 +13,9 @@ Noitavania is a vanilla-friendly (kinda) map expansion project that fills once e
 Sewers, Storage Depot, Cryo-Storage, Volcano, Space, Toxic Dump, Cursed Tunnel, Dark Castle, Hive, Forgotten Tunnels, Ruined Bunker and more on the way.
 
 [1.21 Map Capture](https://easyzoom.com/image/243831)
-[1.19 Nightmare/NG+ Map Capture](https://easyzoom.com/image/243834) (OLD and missing some spots, but mostly accurate.)
+
+[1.19 Nightmare/NG+ Map Capture](https://easyzoom.com/image/243834) (OLD and missing some spots, but mostly accurate)
+
 (Big thanks to mzx987 for the 1.21 Map Capture!)
 
 Works with Horscht's [Location Tracker](steam://openurl/https://steamcommunity.com/sharedfiles/filedetails/?id=2227903743)!
