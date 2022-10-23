@@ -10,7 +10,7 @@ This is the current development version of Noitavania and will contain unfinishe
 * Greatly expands previously empty areas with new and returning biomes, created by myself and other members of the modding community.
 * Reworks the cavernous and empty areas of the vanilla map to have stuff to actually do besides fall asleep as you dig through miles of Extremely Dense Rock.
 * Adds additional secrets and rewards across the map.
-* Adds a sprawling Nightmare/NG+ map alternative, with an almost entirely different approach to the map design. (*Really* departed from vanilla)
+* Adds a sprawling Nightmare/NG+ map alternative, with an almost entirely different approach to the map design. (_Really_ departed from vanilla)
 * Adds mini-temples to the expanded side areas to encourage and reward the brave explorer.
 * Adds new mini-bosses with custom sprites, found in the furtherst parts of the map.
 * Works with Horscht's [Location Tracker](https://steamcommunity.com/sharedfiles/filedetails/?id=2227903743) (Minimap Mod)!
@@ -23,13 +23,7 @@ Sewers, Storage Depot, Cryo-Storage, Volcano, Space, Toxic Dump, Cursed Tunnel, 
 [1.19 Nightmare/NG+ Map Capture](https://easyzoom.com/image/243834) (OLD and missing some spots, but mostly accurate)
 
 ## Credits and Thanks
-Thanks to __Horscht__ (Author of [Volcano Biome](https://steamcommunity.com/sharedfiles/filedetails/?id=2028431626))
-
-__Perh__ (Author of [Sewer+](https://steamcommunity.com/sharedfiles/filedetails/?id=1976633201))
-
-__Archaeopteryx/HornedKey__ (Author of 
-[New Biomes + Secrets](https://steamcommunity.com/sharedfiles/filedetails/?id=1985575640))
-
-__Congress__ (Author of [Chasm Biomes](https://steamcommunity.com/sharedfiles/filedetails/?id=2334635191)) for the permission to adapt or modify their biomes!
+Thanks to __Horscht__ (Author of [Volcano Biome](https://steamcommunity.com/sharedfiles/filedetails/?id=2028431626)), __Perh__ (Author of [Sewer+](https://steamcommunity.com/sharedfiles/filedetails/?id=1976633201)), __Archaeopteryx/HornedKey__ (Author of 
+[New Biomes + Secrets](https://steamcommunity.com/sharedfiles/filedetails/?id=1985575640)), and __Congress__ (Author of [Chasm Biomes](https://steamcommunity.com/sharedfiles/filedetails/?id=2334635191)) for the permission to adapt or modify their biomes!
 - - - -
 Want to support my mods? [Buy me a Coffee!](https://ko-fi.com/tanksy)
