@@ -3,13 +3,16 @@ Noitavania is a vanilla-friendly (kinda) map expansion project that fills once e
 
 This mod was originally created during Early Access and besides Noita+ was the only other map mod to exist. Development has resumed post-1.0, working on and adding new biomes created from scratch rather than just borrowing from other popular biome mods.
 
+This is the current development version of Noitavania and will contain unfinished content and probably bugs. The released version of the mod is 1.22 available on the [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2263080245).
+
 ## What does this mod do?
 * Opens up the map with more inter-biome connectivity.
-* Greatly expands previously empty areas with new (From across the modding community and I) and returning biomes.
+* Greatly expands previously empty areas with new and returning biomes, created by myself and other members of the modding community.
+* Reworks the cavernous and empty areas of the vanilla map to have stuff to actually do besides fall asleep as you dig through miles of Extremely Dense Rock.
 * Adds additional secrets and rewards across the map.
 * Adds a sprawling Nightmare/NG+ map alternative, with an almost entirely different approach to the map design. (*Really* departed from vanilla)
 * Adds mini-temples to the expanded side areas to encourage and reward the brave explorer.
-* Adds a new mini-boss with custom sprites, found deep in the new Castle biome. (more mini-bosses to come!)
+* Adds new mini-bosses with custom sprites, found in the furtherst parts of the map.
 * Works with Horscht's [Location Tracker](https://steamcommunity.com/sharedfiles/filedetails/?id=2227903743) (Minimap Mod)!
 - - - -
 ### New biomes added
