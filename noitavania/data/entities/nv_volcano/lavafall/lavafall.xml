@@ -1,0 +1,54 @@
+<Entity>
+
+  <MaterialInventoryComponent>
+    <count_per_material_type>
+      <Material material="lava" count="100" />
+	  </count_per_material_type>
+  </MaterialInventoryComponent>
+
+  <PixelSceneComponent
+    pixel_scene="mods/noitavania/data/entities/nv_volcano/lavafall/base.png"
+    offset_x="-11"
+    offset_y="-20"
+    >
+  </PixelSceneComponent>
+  <!-- 
+
+positive moves the pixel scene to the right/down, negative left/up
+
+   -->
+  <!-- offset of 10 moves it up.. no... up -->
+    <!-- image_file=  "data/debug/circle_16.png" -->
+
+  <!-- <SpriteComponent
+    image_file="mods/VolcanoBiome/files/debugmarker.png"
+    offset_x="2"
+    offset_y="2"
+    z_index="-256"
+    >
+  </SpriteComponent> -->
+
+  <MaterialSuckerComponent
+    material_type="0"
+    num_cells_sucked_per_frame="7"
+    barrel_size="10000"
+    >
+  </MaterialSuckerComponent>
+
+  <!-- Give this some frames until it executes, so by the time it does it will hopefully
+       have loaded the terrain so the raycast can be successful, otherwise it fails. -->
+  <LuaComponent
+    script_source_file="mods/noitavania/data/entities/nv_volcano/lavafall/find_exit_spot.lua"
+    execute_every_n_frame="120"
+    execute_on_added="0"
+    remove_after_executed="1"
+    >
+  </LuaComponent>
+
+  <LuaComponent
+    script_source_file="mods/noitavania/data/entities/nv_volcano/lavafall/lavafall.lua"
+    execute_every_n_frame="200"
+    >
+  </LuaComponent>
+
+</Entity>

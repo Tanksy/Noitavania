@@ -1,0 +1,14 @@
+<Entity name="volcanobiome_ball">
+
+  <Base file="data/entities/props/physics_stone_02.xml">
+    <PhysicsBody2Component
+      kill_entity_after_initialized="0"
+      >
+    </PhysicsBody2Component>
+    <PhysicsImageShapeComponent
+      image_file="data/ui_gfx/gun_actions/skull.png"
+      >
+    </PhysicsImageShapeComponent>
+  </Base>
+  
+</Entity>

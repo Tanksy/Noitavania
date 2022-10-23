@@ -1,0 +1,13 @@
+<Entity>
+
+  <Base file="data/entities/animals/bigzombiehead.xml">
+
+    <DamageModelComponent 
+      hp="4.0"
+      max_hp="4.0"
+      >
+    </DamageModelComponent>
+
+  </Base>
+
+</Entity>

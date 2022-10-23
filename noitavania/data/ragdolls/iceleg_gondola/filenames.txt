@@ -1,0 +1,7 @@
+mods/noitavania/data/ragdolls/iceleg_gondola/head.png
+mods/noitavania/data/ragdolls/iceleg_gondola/leg1.png
+mods/noitavania/data/ragdolls/iceleg_gondola/foot1.png
+mods/noitavania/data/ragdolls/iceleg_gondola/leg2.png
+mods/noitavania/data/ragdolls/iceleg_gondola/foot2.png
+mods/noitavania/data/ragdolls/iceleg_gondola/leg3.png
+mods/noitavania/data/ragdolls/iceleg_gondola/foot3.png

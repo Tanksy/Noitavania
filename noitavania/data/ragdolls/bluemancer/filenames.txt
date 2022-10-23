@@ -1,0 +1,1 @@
+mods/noitavania/data/ragdolls/bluemancer/body.png

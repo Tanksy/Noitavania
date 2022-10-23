@@ -1,0 +1,19 @@
+<Entity tags="mortal" >
+
+  <!-- mortal is required so it can explode -->
+
+  <Base file="data/entities/base_item_physics.xml" >
+    <PhysicsImageShapeComponent
+      image_file="mods/noitavania/data/entities/landing/ligma.png"
+      material="wood_prop" >
+    </PhysicsImageShapeComponent>
+    
+    <PhysicsBodyComponent on_death_leave_physics_body="1"></PhysicsBodyComponent>
+  </Base>
+
+ 
+
+ 
+
+  
+</Entity>

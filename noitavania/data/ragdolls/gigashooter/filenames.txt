@@ -1,0 +1,1 @@
+mods/noitavania/data/ragdolls/gigashooter/body.png

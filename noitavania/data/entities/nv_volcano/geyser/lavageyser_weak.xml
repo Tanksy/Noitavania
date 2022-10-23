@@ -1,0 +1,13 @@
+<Entity>
+
+  <Base file="mods/noitavania/data/entities/nv_volcano/geyser/lavageyser.xml">
+
+    <ParticleEmitterComponent 
+      y_vel_min="-800"
+      y_vel_max="-600"
+      >
+    </ParticleEmitterComponent>
+
+  </Base>
+
+</Entity>

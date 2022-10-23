@@ -1,0 +1,5 @@
+data/ragdolls/nv_hivemaggot/head.png
+data/ragdolls/nv_hivemaggot/torso_right.png
+data/ragdolls/nv_hivemaggot/torso_left.png
+data/ragdolls/nv_hivemaggot/tail_start.png
+data/ragdolls/nv_hivemaggot/tail_end.png

@@ -1,0 +1,20 @@
+<Entity>
+
+  <Base file="data/entities/buildings/firebugnest.xml">
+
+    <DamageModelComponent
+      hp="15"
+      >
+    </DamageModelComponent>
+
+    <LuaComponent 
+      execute_every_n_frame="232"
+      script_source_file="mods/noitavania/data/entities/nv_volcano/firebugnest.lua"
+      >
+    </LuaComponent>
+
+  </Base>
+
+
+</Entity>
+

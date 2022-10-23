@@ -1,0 +1,61 @@
+<Biome>
+  <Topology 
+    name="Volcano"
+    background_image="mods/noitavania/data/biome_gfx/background_volcano.png"
+    background_edge_left="mods/noitavania/data/biome_gfx/edges/volcano_inside_background_left.png"
+    background_edge_top="mods/noitavania/data/biome_gfx/edges/volcano_inside_background_top.png"
+    background_edge_right="mods/noitavania/data/biome_gfx/edges/volcano_inside_background_right.png"
+    background_edge_bottom="mods/noitavania/data/biome_gfx/edges/volcano_inside_background_bottom.png"
+    lua_script="mods/noitavania/data/scripts/biomes/nv_volcano/entrance_chasm.lua"
+    noise_type="SIN_CAPPED_SIMPLEX"
+
+    wang_map_width="256"
+    wang_map_height="256"
+
+    mGradientAddNoise="1" 
+    mGradientEndY="1024" 
+    mGradientHighNoise="100.123" 
+    mGradientLowNoise="-100.123" 
+    mGradientNoiseScale="0.00128571" 
+    mGradientStartY="-1024" 
+
+    mInsidePerlinClamped="0" 
+    mInsidePerlinScaleMax="1.9999" 
+    mInsidePerlinScaleMin="0.057143" 
+    mInsidePerlinScaleX="0.009999" 
+    mInsidePerlinScaleY="0.009999" 
+    mInsidePerlinScaled="1" 
+    mInsidePerlinSquared="0" 
+
+    mMultiplierGradient="0.881426" 
+    mMultiplierPerlin="0.413" 
+
+    audio_music_2="wandcave"
+    audio_ambience="cave"
+    audio_ambience_surface="desert"
+    
+    has_rain="0">
+  </Topology>
+
+  <!-- MATERIALS -->
+
+  <Materials 
+    name="volcano_entrance_chasm" 
+     >
+
+<!--     <MaterialComponent 
+      _enabled="1" 
+      is_rare="0" 
+      limit_min_y="400" 
+      limit_max_y="2000" 
+      limit_y="1" 
+      material_index="10" 
+      material_max="0" 
+      material_min="0" 
+      material_name="rock_hard"
+     >
+    </MaterialComponent> -->
+
+  </Materials>
+</Biome>
+

@@ -1,0 +1,164 @@
+<Entity tags="hittable,teleportable_NOT,item_physics">
+
+  <!-- physical presence -->
+
+  <PhysicsBodyComponent 
+    _tags="enabled_in_world"
+    uid="1" 
+    allow_sleep="1" 
+    angular_damping="0" 
+    fixed_rotation="0" 
+    is_bullet="1" 
+    linear_damping="0"
+    auto_clean="0"
+    on_death_leave_physics_body="1"
+    hax_fix_going_through_ground="1"
+    >
+  </PhysicsBodyComponent>
+
+  <PhysicsImageShapeComponent 
+    body_id="1"
+    centered="1"
+    image_file="mods/noitavania/data/entities/nv_volcano/enditem/heart_of_the_volcano.png"
+    material="volcanic_rock_hard_box2d"
+  ></PhysicsImageShapeComponent>
+
+  <PhysicsThrowableComponent
+    max_throw_speed="180"
+    throw_force_coeff="1.5"
+  ></PhysicsThrowableComponent>
+
+  <ProjectileComponent
+    _tags="enabled_in_world"
+    lifetime="100000"
+    penetrate_entities="1"
+  ></ProjectileComponent>
+
+  <VelocityComponent
+    _tags="enabled_in_world"
+  ></VelocityComponent>
+
+  <!-- item -->
+
+  <SpriteComponent
+    _tags="enabled_in_hand"
+    _enabled="0"
+    offset_x="4"
+    offset_y="4"
+    image_file="mods/noitavania/data/entities/nv_volcano/enditem/heart_of_the_volcano.png"
+  ></SpriteComponent>
+
+  <ItemComponent
+    _tags="enabled_in_world"
+    item_name="Heart of the Volcano"
+    ui_description="It's still scorching hot, but the heat feels good in your hand..."
+    ui_sprite="mods/noitavania/data/entities/nv_volcano/enditem/heart_of_the_volcano_ui_icon.png"
+    max_child_items="0"
+    is_pickable="1"
+    play_hover_animation="1"
+    is_equipable_forced="1"
+    preferred_inventory="QUICK"
+  ></ItemComponent>
+
+  <UIInfoComponent
+    _tags="enabled_in_world"
+    name="Heart of the Volcano">
+  </UIInfoComponent>
+	
+	<AbilityComponent
+		ui_name="Heart of the Volcano"
+		throw_as_item="1"
+		><gun_config
+			deck_capacity="0"
+		></gun_config>
+	</AbilityComponent>
+
+  
+  <ParticleEmitterComponent 
+    _tags="enabled_in_world,enabled_in_hand,item_identified"
+    emitted_material_name="spark_red"
+    offset.x="0"
+    offset.y="0"
+    x_pos_offset_min="-3"
+    x_pos_offset_max="3"
+    y_pos_offset_min="-3"
+    y_pos_offset_max="3"
+    x_vel_min="-2"
+    x_vel_max="2"
+    y_vel_min="-10"
+    y_vel_max="-5"
+    count_min="4"
+    count_max="6"
+    lifetime_min="0.4"
+    lifetime_max="0.6"
+    emit_cosmetic_particles="1"
+    emission_interval_min_frames="5"
+    emission_interval_max_frames="20"
+    is_emitting="1" >
+  </ParticleEmitterComponent>
+
+    <ParticleEmitterComponent 
+    _tags="enabled_in_world,enabled_in_hand,item_identified"
+    emitted_material_name="spark_yellow"
+    offset.x="0"
+    offset.y="0"
+    gravity.y="0"
+    x_pos_offset_min="-4"
+    x_pos_offset_max="4"
+    y_pos_offset_min="-4"
+    y_pos_offset_max="4"
+    x_vel_min="-5"
+    x_vel_max="5"
+    y_vel_min="-5"
+    y_vel_max="5"
+    count_min="2"
+    count_max="3"
+    lifetime_min="0.4"
+    lifetime_max="0.6"
+    emit_cosmetic_particles="1"
+    emission_interval_min_frames="10"
+    emission_interval_max_frames="20"
+    is_emitting="1" >
+  </ParticleEmitterComponent>
+  
+  <LightComponent 
+    _tags="enabled_in_hand,enabled_in_world,item_identified"
+    _enabled="1" 
+    radius="130"
+    fade_out_time="1.5" 
+    r="240"
+    g="60"
+    b="0" >
+  </LightComponent>
+
+  <AudioComponent
+    _tags="enabled_in_hand"
+    file="data/audio/Desktop/projectiles.snd"
+    event_root="player_projectiles/torch"
+    set_latest_event_position="1" >
+  </AudioComponent>
+
+  <AudioLoopComponent
+    _tags="enabled_in_hand,enabled_in_world"
+    file="data/audio/Desktop/projectiles.snd"
+    event_name="player_projectiles/torch/loop"
+    auto_play_if_enabled="1"
+    play_on_component_enable="1" >
+  </AudioLoopComponent>
+
+  <GameEffectComponent 
+    _tags="enabled_in_hand"
+    effect="PROTECTION_FIRE"
+    frames="-1"
+    >
+  </GameEffectComponent>
+
+  <LuaComponent
+    _tags="enabled_in_hand"
+    _enabled="0"
+    execute_every_n_frame="-1"
+    script_enabled_changed="mods/noitavania/data/entities/nv_volcano/enditem/heart_of_the_volcano.lua"
+    >
+  </LuaComponent>
+
+</Entity>

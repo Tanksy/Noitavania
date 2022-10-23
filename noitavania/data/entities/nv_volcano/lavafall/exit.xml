@@ -1,0 +1,43 @@
+<Entity>
+
+  <MaterialInventoryComponent />
+
+  <PixelSceneComponent
+    pixel_scene="mods/noitavania/data/entities/nv_volcano/lavafall/exit.png"
+    offset_x="-12"
+    offset_y="-12"
+    >
+  </PixelSceneComponent>
+
+  <!-- <SpriteComponent
+    image_file="mods/VolcanoBiome/files/debugmarker.png"
+    offset_x="2"
+    offset_y="2"
+    z_index="-256"
+    >
+  </SpriteComponent> -->
+
+
+<!-- y_pos_offset_min="-5"
+    y_pos_offset_max="-3" -->
+
+  <ParticleEmitterComponent 
+    is_emitting="1"
+    emitted_material_name="lava"
+    x_pos_offset_min="-1"
+    x_pos_offset_max="1"
+    y_pos_offset_min="-3"
+    y_pos_offset_max="-1"
+    x_vel_min="-5"
+    x_vel_max="5"
+    y_vel_min="20"
+    y_vel_max="30"
+    count_min="5"
+    count_max="12"
+    emission_interval_min_frames="2"
+    emission_interval_max_frames="7"
+    use_material_inventory="1"
+    >
+  </ParticleEmitterComponent>
+
+</Entity>

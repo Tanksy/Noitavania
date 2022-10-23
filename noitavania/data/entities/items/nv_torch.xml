@@ -1,0 +1,196 @@
+<Entity tags="wand">
+	<Base file="data/entities/base_wand.xml">
+	</Base>
+	
+	<Base file="data/entities/base_item.xml">
+		<ItemComponent
+			play_hover_animation="1"
+			play_spinning_animation="0" >
+		</ItemComponent>
+		
+		<SimplePhysicsComponent
+			_enabled="0">
+		</SimplePhysicsComponent>
+	</Base>
+	
+	<HotspotComponent 
+        _tags="shoot_pos" 
+        offset.x="12" 
+        offset.y="0" >
+    </HotspotComponent>
+	
+	<ManaReloaderComponent
+        _tags="enabled_in_world,enabled_in_hand,enabled_in_inventory" >
+    </ManaReloaderComponent>
+	
+    <AbilityComponent 
+        amount_in_inventory="1" 
+        cooldown_frames="0" 
+        drop_as_item_on_death="1" 
+        entity_count="1" 
+        entity_file="" 
+        fast_projectile="0" 
+		mana_charge_speed="1"
+		mana_max="100"
+        max_amount_in_inventory="1" 
+        reload_time_frames="0" 
+        shooting_reduces_amount_in_inventory="0" 
+        sprite_file="mods/noitavania/data/entities_gfx/items/nv_torch.xml" 
+        swim_propel_amount="0" 
+        throw_as_item="0"
+        ui_name="Torch"
+        use_gun_script="1" 
+		add_these_child_actions="TORCH">
+        <gun_config 
+            actions_per_round="2"
+            shuffle_deck_when_empty="0"
+            reload_time="2" 
+            deck_capacity="3" >
+        </gun_config>
+        <gunaction_config 
+            fire_rate_wait="0" >
+        </gunaction_config>
+    </AbilityComponent>
+	
+	<ParticleEmitterComponent 
+		_tags="enabled_in_world"
+		emitted_material_name="spark"
+		offset.x="0"
+		offset.y="0"
+		x_pos_offset_min="11"
+		x_pos_offset_max="13"
+		y_pos_offset_min="2"
+		y_pos_offset_max="-2"
+		x_vel_min="-2"
+		x_vel_max="2"
+		y_vel_min="-20"
+		y_vel_max="-10"
+		count_min="1"
+		count_max="2"
+		lifetime_min="0.4"
+		lifetime_max="0.6"
+		create_real_particles="0"
+		emit_cosmetic_particles="1"
+		emission_interval_min_frames="5"
+		emission_interval_max_frames="15"
+		is_emitting="1" >
+	</ParticleEmitterComponent>
+	
+	<ParticleEmitterComponent 
+		_tags="enabled_in_world"
+		emitted_material_name="spark"
+		offset.x="0"
+		offset.y="0"
+		x_pos_offset_min="11"
+		x_pos_offset_max="13"
+		y_pos_offset_min="2"
+		y_pos_offset_max="-2"
+		x_vel_min="-2"
+		x_vel_max="2"
+		y_vel_min="-20"
+		y_vel_max="-10"
+		count_min="1"
+		count_max="1"
+		lifetime_min="0.4"
+		lifetime_max="0.6"
+		create_real_particles="1"
+		emit_cosmetic_particles="1"
+		emission_interval_min_frames="15"
+		emission_interval_max_frames="25"
+		is_emitting="1" >
+	</ParticleEmitterComponent>
+	
+	<ParticleEmitterComponent 
+		_tags="enabled_in_world"
+		emitted_material_name="smoke"
+		offset.x="0"
+		offset.y="0"
+		x_pos_offset_min="11"
+		x_pos_offset_max="13"
+		y_pos_offset_min="2"
+		y_pos_offset_max="-2"
+		x_vel_min="-2"
+		x_vel_max="2"
+		y_vel_min="-20"
+		y_vel_max="-10"
+		count_min="1"
+		count_max="1"
+		lifetime_min="0.4"
+		lifetime_max="0.6"
+		create_real_particles="1"
+		emit_cosmetic_particles="1"
+		emission_interval_min_frames="15"
+		emission_interval_max_frames="30"
+		is_emitting="1" >
+	</ParticleEmitterComponent>
+	
+	<LightComponent 
+		_tags="enabled_in_world"
+		_enabled="1" 
+		radius="130"
+		fade_out_time="1.5" 
+		r="240"
+		g="180"
+		b="120" >
+	</LightComponent>
+
+	<LightComponent 
+		_tags="enabled_in_world"
+		_enabled="1" 
+		radius="16"
+		fade_out_time="1.5" 
+		r="255"
+		g="255"
+		b="255" >
+	</LightComponent>
+	
+	<ParticleEmitterComponent 
+	    _tags="enabled_in_world"
+	    emitted_material_name="spark"
+		custom_style="FIRE"
+	    offset.x="0"
+	    offset.y="0"
+	    x_pos_offset_min="11"
+	    x_pos_offset_max="12"
+	    y_pos_offset_min="-1"
+	    y_pos_offset_max="1"
+	    x_vel_min="-2"
+	    x_vel_max="2"
+	    y_vel_min="-20"
+	    y_vel_max="-10"
+	    count_min="4"
+	    count_max="6"
+	    lifetime_min="0.3"
+	    lifetime_max="0.4"
+	    create_real_particles="0"
+	    emit_cosmetic_particles="0"
+	    emission_interval_min_frames="1"
+	    emission_interval_max_frames="3" >
+	</ParticleEmitterComponent>
+	
+	<SpriteComponent 
+        _tags="enabled_in_world"
+        alpha="0.8"
+        image_file="data/particles/torch_fog_of_war_hole.xml"
+        smooth_filtering="1"
+        fog_of_war_hole="1"
+        has_special_scale="1"
+        special_scale_x="4"
+        special_scale_y="4" >
+    </SpriteComponent>
+
+	<AudioComponent
+	    _tags="enabled_in_world"
+		file="data/audio/Desktop/projectiles.bank"
+		event_root="player_projectiles/torch"
+		set_latest_event_position="1" >
+	</AudioComponent>
+
+	<AudioLoopComponent
+	    _tags="enabled_in_world"
+		file="data/audio/Desktop/projectiles.bank"
+		event_name="player_projectiles/torch/loop"
+		auto_play_if_enabled="1"
+		play_on_component_enable="1" >
+	</AudioLoopComponent>
+</Entity>

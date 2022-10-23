@@ -1,0 +1,263 @@
+<Entity name="$animal_golden_slave" >
+  
+	<Base file="data/entities/base_enemy_flying.xml" >
+		<ItemChestComponent level="3" > </ItemChestComponent>
+		
+		<AnimalAIComponent 
+			_enabled="1" 
+			preferred_job="JobDefault"
+			escape_if_damaged_probability="60"
+			attack_melee_damage_min="0.4" 
+			attack_melee_damage_max="0.7"
+			creature_detection_range_x="400"
+			creature_detection_range_y="400"
+			creature_detection_angular_range_deg="60"
+			attack_melee_max_distance="20"
+			food_material="meat"
+			needs_food="0"
+			sense_creatures="1"
+			can_fly="1"  
+			eye_offset_y="4"
+			attack_melee_enabled="1"
+			attack_melee_max_distance="10"
+			aggressiveness_min="1"
+			aggressiveness_max="80"
+			>
+		</AnimalAIComponent>
+		
+		<DamageModelComponent 
+			air_needed="1"
+            hp="40"
+            materials_create_messages="1"
+			ragdoll_filenames_file="data/ragdolls/scavenger_clusterbomb/filenames.txt" 
+			fire_probability_of_ignition="1"
+    		blood_spray_material="blood"
+			>
+			<damage_multipliers
+				melee="0.1"
+				projectile="0.8"
+				explosion="0.8"
+				electricity="0.8"
+				fire="0.0" 
+				physics_hit="0.05">
+			</damage_multipliers>
+		</DamageModelComponent>
+
+		<SpriteComponent 
+			image_file="mods/noitavania/data/entities_gfx/theking.xml" 
+			offset_x="0"
+			offset_y="0">
+		</SpriteComponent>
+
+		<PathFindingComponent
+			can_jump="0"
+			can_fly="1" 
+			jump_speed="80"
+			initial_jump_lob="1"
+			initial_jump_max_distance_x="60"
+			initial_jump_max_distance_y="60" >
+		</PathFindingComponent>
+
+		<PathFindingGridMarkerComponent
+			marker_work_flag="24" >
+		</PathFindingGridMarkerComponent>
+		
+		<GenomeDataComponent 
+			herd_id="orcs"
+			food_chain_rank="9"
+			is_predator="1" >
+		</GenomeDataComponent>
+		
+		<CharacterPlatformingComponent 
+			fly_speed_change_spd="0.8"
+			fly_velocity_x="28" 
+			accel_x="0.03" 
+			jump_velocity_y="-12" 
+			run_velocity="22"  >
+		</CharacterPlatformingComponent>
+
+		<CameraBoundComponent
+			max_count="30"
+			distance="160000">
+		</CameraBoundComponent>
+		
+		<HitboxComponent 
+            _enabled="1" 
+            aabb_min_x="-5" 
+            aabb_max_x="5" 
+            aabb_min_y="-16" 
+            aabb_max_y="3" 
+			>
+        </HitboxComponent>
+		
+		<CharacterDataComponent
+			collision_aabb_min_x="-3.0" 
+			collision_aabb_max_x="3.0" 
+			collision_aabb_min_y="-12" 
+			collision_aabb_max_y="3"
+			mass="1.9"
+			>
+		</CharacterDataComponent>
+	</Base>
+
+  <Base file="data/entities/base_jetpack.xml" />
+
+  <LightComponent 
+    _enabled="1" 
+    radius="50"
+    fade_out_time="1.5" 
+	offset_y="-8"
+	>
+  </LightComponent>
+  
+  <AIAttackComponent
+		min_distance="0"
+		max_distance="200"
+		frames_between="1800"
+		frames_between_global="50"
+		attack_ranged_action_frame="3"
+		animation_name="attack_ranged"
+		attack_ranged_entity_file="data/entities/projectiles/deck/shield_field.xml"
+		attack_ranged_offset_y="-9"
+		attack_ranged_offset_x="12"
+		attack_ranged_entity_count_min="1"
+		attack_ranged_entity_count_max="1"
+		>
+	</AIAttackComponent>
+
+  	<AIAttackComponent
+		min_distance="100"
+		max_distance="300"
+		frames_between="120" 
+		frames_between_global="50"
+		attack_ranged_action_frame="3"
+		attack_ranged_entity_file="data/entities/projectiles/mine.xml"
+		animation_name="attack_ranged"
+		attack_ranged_offset_y="-9"
+		attack_ranged_offset_x="12"
+		attack_ranged_entity_count_min="1"
+		attack_ranged_entity_count_max="1"
+		
+		>
+	</AIAttackComponent>
+	
+	<AIAttackComponent
+		min_distance="0"
+		max_distance="1000"
+		frames_between="1600" 
+		frames_between_global="50"
+		attack_ranged_action_frame="3"
+		attack_ranged_entity_file="mods/noitavania/data/entities/thrones/summonshine.xml"
+		animation_name="attack_ranged"
+		attack_ranged_offset_y="-9"
+		attack_ranged_offset_x="12"
+		attack_ranged_entity_count_min="1"
+		attack_ranged_entity_count_max="1"
+		
+		>
+	</AIAttackComponent>
+	
+	<AIAttackComponent
+		min_distance="200"
+		max_distance="500"
+		frames_between="12" 
+		frames_between_global="15"
+		attack_ranged_action_frame="1"
+		attack_ranged_entity_file="data/entities/projectiles/machinegun_bullet_slow.xml"
+		animation_name="land"
+		attack_ranged_offset_y="-9"
+		attack_ranged_offset_x="12"
+		attack_ranged_entity_count_min="1"
+		attack_ranged_entity_count_max="1"
+		
+		>
+	</AIAttackComponent>
+	
+	<AIAttackComponent
+		min_distance="100"
+		max_distance="400"
+		frames_between="600" 
+		frames_between_global="15"
+		attack_ranged_action_frame="1"
+		attack_ranged_entity_file="data/entities/projectiles/rocket_tiny_roll.xml"
+		animation_name="land"
+		attack_ranged_offset_y="-9"
+		attack_ranged_offset_x="12"
+		attack_ranged_entity_count_min="1"
+		attack_ranged_entity_count_max="1"
+		
+		>
+	</AIAttackComponent>
+	
+	
+	
+	<ItemPickUpperComponent
+    	is_in_npc="1">
+    </ItemPickUpperComponent>
+	
+	<SpriteComponent 
+		_tags="health_bar_back,ui,no_hitbox" 
+		_enabled="1" 
+		alpha="1" 
+		has_special_scale="1" 
+		image_file="data/ui_gfx/health_slider_back.png" 
+		is_text_sprite="0" 
+		next_rect_animation="" 
+		offset_x="12" 
+		offset_y="42" 
+		rect_animation="" 
+		special_scale_x="1" 
+		special_scale_y="1" 
+		ui_is_parent="0" 
+		update_transform="1" 
+		visible="1" 
+		z_index="-9000"
+		 >
+	</SpriteComponent>
+
+	<SpriteComponent 
+		_tags="health_bar,ui,no_hitbox" 
+		_enabled="1" 
+		alpha="1" 
+		has_special_scale="1" 
+		image_file="data/ui_gfx/health_slider_front.png" 
+		is_text_sprite="0" 
+		next_rect_animation="" 
+		offset_x="11" 
+		offset_y="42" 
+		rect_animation="" 
+		special_scale_x="1" 
+		special_scale_y="1" 
+		ui_is_parent="0" 
+		update_transform="1" 
+		visible="1" 
+		z_index="-9000"
+		 >
+	</SpriteComponent>
+
+	<HealthBarComponent>
+	</HealthBarComponent>
+	
+	 <SpriteComponent 
+   	_tags="laser_sight"
+    _enabled="1" 
+    alpha="1" 
+    image_file="data/particles/laser_red.png"
+    offset_x="5" 
+    offset_y="1"
+    emissive="1"
+    additive="1"
+    visible="0"
+    update_transform="0"
+    next_rect_animation="" 
+    rect_animation="default" 
+     >
+  </SpriteComponent>
+  
+  <LuaComponent
+		script_death="mods/noitavania/data/scripts/thrones/kingdeath.lua"
+		>
+	</LuaComponent>
+
+</Entity>
+

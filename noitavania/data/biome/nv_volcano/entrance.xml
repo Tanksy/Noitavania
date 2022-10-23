@@ -1,0 +1,137 @@
+<Biome>
+  <Topology 
+    name="_EMPTY_"
+    background_image="mods/noitavania/data/biome_gfx/background_volcano.png"
+    background_edge_left="mods/noitavania/data/biome_gfx/edges/volcano_inside_background_left.png"
+    background_edge_top="mods/noitavania/data/biome_gfx/edges/volcano_inside_background_top.png"
+    background_edge_right="mods/noitavania/data/biome_gfx/edges/volcano_inside_background_right.png"
+    background_edge_bottom="mods/noitavania/data/biome_gfx/edges/volcano_inside_background_bottom.png"
+    lua_script="mods/noitavania/data/scripts/biomes/nv_volcano/entrance.lua"
+    noise_type="SIN_CAPPED_SIMPLEX"
+
+    wang_map_width="256"
+    wang_map_height="256"
+
+    mGradientAddNoise="1" 
+    mGradientEndY="1024" 
+    mGradientHighNoise="100.123" 
+    mGradientLowNoise="-100.123" 
+    mGradientNoiseScale="0.00128571" 
+    mGradientStartY="-1024" 
+
+    mInsidePerlinClamped="0" 
+    mInsidePerlinScaleMax="1.9999" 
+    mInsidePerlinScaleMin="0.057143" 
+    mInsidePerlinScaleX="0.009999" 
+    mInsidePerlinScaleY="0.009999" 
+    mInsidePerlinScaled="1" 
+    mInsidePerlinSquared="0" 
+
+    mMultiplierGradient="0.881426" 
+    mMultiplierPerlin="0.413" 
+
+    audio_ambience_surface="desert"
+    
+    has_rain="0">
+  </Topology>
+
+  <!-- MATERIALS -->
+
+  <Materials 
+    name="volcano_entrance" 
+     >
+
+    <MaterialComponent 
+      _enabled="1" 
+      is_rare="0" 
+      limit_max_y="600" 
+      limit_min_y="-1024" 
+      limit_y="1" 
+      material_index="10" 
+      material_max="0.48" 
+      material_min="0.45" 
+      material_name="volcanic_sand" 
+      rare_polka_is_boxed="1" 
+      rare_polka_probability="0.2" 
+      rare_polka_radius_high="0.65" 
+      rare_polka_radius_low="0.2" 
+      rare_required_max="10" 
+      rare_required_min="0.2" 
+      rare_scale_x="0.05" 
+      rare_scale_y="0.05" 
+      rare_use_perlin="0" 
+      rare_use_polka="1" >
+    </MaterialComponent>
+
+	  <MaterialComponent 
+      _enabled="1" 
+      is_rare="0" 
+      limit_max_y="600" 
+      limit_min_y="-1024" 
+      limit_y="1" 
+      material_index="10" 
+      material_max="0.6" 
+      material_min="0.48" 
+      material_name="volcanic_sand_static" 
+      rare_polka_is_boxed="1" 
+      rare_polka_probability="0.2" 
+      rare_polka_radius_high="0.65" 
+      rare_polka_radius_low="0.2" 
+      rare_required_max="10" 
+      rare_required_min="0.2" 
+      rare_scale_x="0.05" 
+      rare_scale_y="0.05" 
+      rare_use_perlin="0" 
+      rare_use_polka="1" >
+    </MaterialComponent>
+  
+	  <MaterialComponent 
+      _enabled="1" 
+      is_rare="0" 
+      limit_max_y="600" 
+      limit_min_y="-1024" 
+      limit_y="1" 
+      material_index="10" 
+      material_max="0.73" 
+      material_min="0.59" 
+      material_name="volcanic_rock_hard" 
+      >
+    </MaterialComponent>
+
+    <MaterialComponent 
+      _enabled="1" 
+      is_rare="0" 
+      limit_max_y="700" 
+      limit_min_y="-1024" 
+      limit_y="0" 
+      material_index="10" 
+      material_max="0.95" 
+      material_min="0.72" 
+      material_name="rock_hard_border" 
+      >
+    </MaterialComponent>
+
+    <MaterialComponent 
+      _enabled="1" 
+      is_rare="0" 
+      limit_min_y="400" 
+      limit_max_y="2000" 
+      limit_y="1" 
+      material_index="11" 
+      material_max="3.6" 
+      material_min="-1" 
+      material_name="volcanic_rock_hard"
+     >
+    </MaterialComponent>
+
+    <FossilComponent 
+      count_min="2"
+      count_max="4"
+      seed="63745"
+      material="bone"
+      image_file="data/vegetation/desert_bone_$[1-8].png"
+      >
+    </FossilComponent>
+  </Materials>
+</Biome>
+

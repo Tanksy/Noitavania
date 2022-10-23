@@ -1,0 +1,33 @@
+<Biome>
+  <Topology 
+    name="_EMPTY_"
+    type="BIOME_WANG_TILE"
+    background_image="data/weather_gfx/background_pyramid.png"
+	background_edge_left="data/weather_gfx/edges/background_pyramid_left.png"
+    background_edge_right="data/weather_gfx/edges/background_pyramid_right.png"
+    background_edge_top="data/weather_gfx/edges/background_pyramid_top.png"
+    background_edge_bottom="data/weather_gfx/edges/background_pyramid_bottom.png"
+    background_edge_priority="10"  
+	background_use_neighbor="0"
+	limit_background_image="0"
+    lua_script="mods/noitavania/data/scripts/biomes/nv_castle/boss_room.lua"
+	wang_template_file=""
+    wang_map_width="256"
+    wang_map_height="256"
+    audio_music_2="crypt"
+    audio_ambience="crypt"
+	audio_music_energy_coeff="1"
+	noise_biome_edges="0"
+	coarse_map_force_terrain="1"
+	pixel_scene="1"
+	>
+  </Topology>
+
+  <Materials 
+    name="castle" 
+     >
+    
+  </Materials>
+
+</Biome>
+

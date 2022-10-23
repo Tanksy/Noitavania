@@ -1,0 +1,172 @@
+<Entity tags="zombie" name="$animal_icezombie">
+	<Base file="data/entities/base_enemy_basic.xml" >
+		<LuaComponent
+			_enabled="0"
+			script_death=""
+			
+			>
+		</LuaComponent>
+		
+		<AnimalAIComponent 
+			_enabled="1" 
+			preferred_job="JobDefault"
+			escape_if_damaged_probability="35"
+			attack_melee_action_frame="3"
+			attack_melee_damage_min="0.6" 
+			attack_melee_damage_max="0.8"
+			attack_dash_enabled="1"
+			creature_detection_range_x="250"
+			creature_detection_range_y="250"
+			food_material="meat"
+			needs_food="0"
+			sense_creatures="1"
+			attack_ranged_enabled="1"
+			attack_ranged_entity_file="data/entities/projectiles/fireball_ghostly.xml"
+			attack_ranged_frames_between="40"
+			attack_ranged_action_frame="4"
+			can_fly="0"  
+			defecates_and_pees="1"
+			aggressiveness_min="1"
+			aggressiveness_max="50"
+			>
+		</AnimalAIComponent>
+
+		<DamageModelComponent 
+            hp="10"
+            materials_create_messages="1"
+			materials_that_damage="acid,lava,poison,radioactive_gas,radioactive_gas_static,rock_static_radioactive" 
+			materials_how_much_damage="0.004,0.004,0.001,0.001,0.001,0.001"
+			blood_material="blood_cold"
+			blood_spray_material="blood_cold"
+            ragdoll_material="meat_cursed"
+            ragdoll_filenames_file="data/ragdolls/bigzombie/filenames_empty.txt" >
+			<damage_multipliers
+				ice="0.0"
+				>
+			</damage_multipliers>
+		</DamageModelComponent>
+
+		<SpriteComponent 
+			image_file="mods/noitavania/data/entities_gfx/icezombie.xml" 
+			offset_x="0"
+			offset_y="0">
+		</SpriteComponent>
+
+		<PathFindingComponent
+		    distance_to_reach_node_x="20"
+		    distance_to_reach_node_y="20"
+		    can_swim_on_surface="1"
+		    can_dive="1"
+			frames_to_get_stuck="5"
+			can_jump="1" >
+		</PathFindingComponent>
+
+		<PathFindingGridMarkerComponent
+			marker_work_flag="16" >
+		</PathFindingGridMarkerComponent>
+		
+		<GenomeDataComponent 
+			herd_id="ice"
+			food_chain_rank="10"
+			is_predator="1" >
+		</GenomeDataComponent>
+		
+		<CharacterDataComponent 
+			collision_aabb_min_x="-4.0" 
+			collision_aabb_max_x="3.0" 
+			collision_aabb_min_y="-12" 
+			collision_aabb_max_y="3" 
+			buoyancy_check_offset_y="-4" 
+			mass="2.1"
+			>
+		</CharacterDataComponent>
+		
+		<CharacterPlatformingComponent 
+    		pixel_gravity="600" 
+			jump_velocity_y="-12" 
+			run_velocity="18"
+			>
+		</CharacterPlatformingComponent>
+		
+		<HitboxComponent 
+			_enabled="1" 
+			aabb_min_x="-4.5" 
+			aabb_max_x="4.5" 
+			aabb_min_y="-11.5" 
+			aabb_max_y="3" 
+			is_enemy="1" 
+			is_item="0" 
+			is_player="0" >
+		</HitboxComponent>
+
+		<CameraBoundComponent
+		  max_count="20"
+		  distance="160000">
+		</CameraBoundComponent>
+	</Base>
+
+
+	<ItemPickUpperComponent
+    	is_in_npc="1">
+    </ItemPickUpperComponent>
+	
+	<ParticleEmitterComponent 
+		emitted_material_name="blood_cold_vapour"
+		count_min="1"
+		count_max="3"
+		offset.x="0"
+		offset.y="-3"
+		x_pos_offset_min="-7"
+		y_pos_offset_min="-13"
+		x_pos_offset_max="5"
+		y_pos_offset_max="0"
+		x_vel_min="-10"
+		x_vel_max="10"
+		y_vel_min="-10"
+		y_vel_max="10"
+		count_min="5"
+		count_max="5"
+		lifetime_min="0.4"
+		lifetime_max="1.0"
+		create_real_particles="1"
+		emit_cosmetic_particles="0"
+		emission_interval_min_frames="3"
+		emission_interval_max_frames="6"
+		is_emitting="1" >
+	</ParticleEmitterComponent>
+	
+	<ParticleEmitterComponent 
+		emitted_material_name="blood_cold_vapour"
+		custom_style="FIRE"
+		color="ff50e7f0"
+		count_min="4"
+		count_max="9"
+		offset.x="0"
+		offset.y="-3"
+		x_pos_offset_min="-7"
+		y_pos_offset_min="-13"
+		x_pos_offset_max="5"
+		y_pos_offset_max="0"
+		x_vel_min="-10"
+		x_vel_max="10"
+		y_vel_min="-10"
+		y_vel_max="10"
+		count_min="5"
+		count_max="5"
+		lifetime_min="0.4"
+		lifetime_max="1.0"
+		create_real_particles="1"
+		emit_cosmetic_particles="0"
+		emission_interval_min_frames="1"
+		emission_interval_max_frames="2"
+		is_emitting="1" >
+	</ParticleEmitterComponent>
+	
+	<LuaComponent
+	execute_every_n_frame="-1"
+    script_death="mods/noitavania/data/scripts/forgotten_tunnels/icezombie_death.lua"
+    remove_after_executed="0">
+  </LuaComponent>
+
+</Entity>
+

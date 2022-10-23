@@ -1,0 +1,9 @@
+mods/noitavania/data/ragdolls/icezombie/torso.png
+mods/noitavania/data/ragdolls/icezombie/right_thigh.png
+mods/noitavania/data/ragdolls/icezombie/right_foot.png
+mods/noitavania/data/ragdolls/icezombie/right_arm.png
+mods/noitavania/data/ragdolls/icezombie/right_hand.png
+mods/noitavania/data/ragdolls/icezombie/left_thigh.png
+mods/noitavania/data/ragdolls/icezombie/left_foot.png
+mods/noitavania/data/ragdolls/icezombie/left_arm.png
+mods/noitavania/data/ragdolls/icezombie/tail.png

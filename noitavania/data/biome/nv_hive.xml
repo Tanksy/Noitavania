@@ -1,0 +1,116 @@
+<Biome>
+  <Topology 
+    name="Hive"
+    type="BIOME_WANG_TILE"
+    background_image="mods/noitavania/data/biome_gfx/background_hive.png"
+	background_edge_left="mods/noitavania/data/biome_gfx/edges/hive_left.png"
+    background_edge_right="mods/noitavania/data/biome_gfx/edges/hive_right.png"
+    background_edge_top="mods/noitavania/data/biome_gfx/edges/hive_top.png"
+    background_edge_bottom="mods/noitavania/data/biome_gfx/edges/hive_bottom.png"
+    background_edge_priority="10"  
+	limit_background_image="0"
+    wang_template_file="mods/noitavania/data/wang_tiles/nv_hive.png" 
+    lua_script="mods/noitavania/data/scripts/biomes/nv_hive.lua"
+    wang_map_width="510"
+    wang_map_height="250"
+    audio_music_2="fungicave"
+    audio_music_energy_coeff="2"
+    audio_music_forced_quietness_duration_seconds="4"
+    audio_ambience="rainforest"
+	>
+  </Topology>
+
+  <Materials 
+    name="hive" 
+     >
+	<MaterialComponent 
+      _enabled="1" 
+      is_rare="1" 
+      limit_max_y="2048" 
+      limit_min_y="100" 
+      limit_y="0" 
+      material_index="10" 
+      material_max="0.46" 
+      material_min="0.443701" 
+      material_name="gold" 
+      rare_polka_is_boxed="0" 
+      rare_polka_probability="0.960871" 
+      rare_polka_radius_high="0.771429" 
+      rare_polka_radius_low="0.357143" 
+      rare_required_max="10" 
+      rare_required_min="0" 
+      rare_scale_x="0.0100004" 
+      rare_scale_y="0.00357165" 
+      rare_use_perlin="0" 
+      rare_use_polka="1" >
+    </MaterialComponent>
+	
+	<MaterialComponent 
+      _enabled="1" 
+      is_rare="0" 
+      limit_max_y="424.229" 
+      limit_min_y="-1024" 
+      limit_y="0" 
+      material_index="8"
+      material_max="0.86" 
+      material_min="0.7" 
+      material_name="nv_beeswax"
+      rare_polka_is_boxed="1" 
+      rare_polka_probability="0.2" 
+      rare_polka_radius_high="0.65" 
+      rare_polka_radius_low="0.2" 
+      rare_required_max="10" 
+      rare_required_min="0.2" 
+      rare_scale_x="0.05" 
+      rare_scale_y="0.05" 
+      rare_use_perlin="0" 
+      rare_use_polka="1" >
+    </MaterialComponent>
+
+    <MaterialComponent 
+      _enabled="1" 
+      is_rare="0" 
+      limit_max_y="2048" 
+      limit_min_y="100" 
+      limit_y="0" 
+      material_index="10" 
+      material_max="1.65" 
+      material_min="0.86" 
+      material_name="nv_beeswax_old" 
+      rare_polka_is_boxed="1" 
+      rare_polka_probability="0.2" 
+      rare_polka_radius_high="0.65" 
+      rare_polka_radius_low="0.2" 
+      rare_required_max="10" 
+      rare_required_min="0.2" 
+      rare_scale_x="0.05" 
+      rare_scale_y="0.05" 
+      rare_use_perlin="0" 
+      rare_use_polka="1" >
+    </MaterialComponent>
+
+    <MaterialComponent 
+      _enabled="1" 
+      is_rare="1" 
+      limit_max_y="2048" 
+      limit_min_y="100" 
+      limit_y="0" 
+      material_index="8" 
+      material_max="1.4" 
+      material_min="0.65" 
+      material_name="honey" 
+      rare_polka_is_boxed="1" 
+      rare_polka_probability="0.157143" 
+      rare_polka_radius_high="0.864286" 
+      rare_polka_radius_low="0.0428571" 
+      rare_required_max="10" 
+      rare_required_min="0.371429" 
+      rare_scale_x="0.0214286" 
+      rare_scale_y="0.0214286" 
+      rare_use_perlin="0" 
+      rare_use_polka="1" >
+    </MaterialComponent>
+  </Materials>
+
+</Biome>
+

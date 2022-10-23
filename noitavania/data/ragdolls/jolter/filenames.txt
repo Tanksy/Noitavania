@@ -1,0 +1,6 @@
+mods/noitavania/data/ragdolls/jolter/torso.png
+mods/noitavania/data/ragdolls/jolter/head.png
+mods/noitavania/data/ragdolls/jolter/left_foot.png
+mods/noitavania/data/ragdolls/jolter/right_foot.png
+mods/noitavania/data/ragdolls/jolter/tanks.png
+mods/noitavania/data/ragdolls/jolter/gun.png

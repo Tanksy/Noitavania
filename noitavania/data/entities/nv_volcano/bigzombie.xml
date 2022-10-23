@@ -1,0 +1,19 @@
+<Entity>
+
+  <Base file="data/entities/animals/bigzombie.xml">
+
+    <DamageModelComponent 
+      hp="8.0"
+      max_hp="8.0"
+      >
+    </DamageModelComponent>
+
+    <LuaComponent />
+    <LuaComponent
+      script_death="mods/noitavania/data/entities/nv_volcano/bigzombie_death.lua"
+      >
+    </LuaComponent>
+
+  </Base>
+
+</Entity>

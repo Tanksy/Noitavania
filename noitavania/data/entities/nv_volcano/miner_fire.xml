@@ -1,0 +1,13 @@
+<Entity>
+
+  <Base file="data/entities/animals/miner_fire.xml">
+
+    <DamageModelComponent 
+      hp="5.0"
+      max_hp="5.0"
+      >
+    </DamageModelComponent>
+
+  </Base>
+
+</Entity>

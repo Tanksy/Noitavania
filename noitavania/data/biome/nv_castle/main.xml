@@ -1,0 +1,73 @@
+<Biome>
+  <Topology 
+    name="Dark Castle"
+    type="BIOME_WANG_TILE"
+    background_image="data/weather_gfx/background_pyramid.png"
+	background_edge_left="data/weather_gfx/edges/background_pyramid_left.png"
+    background_edge_right="data/weather_gfx/edges/background_pyramid_right.png"
+    background_edge_top="data/weather_gfx/edges/background_pyramid_top.png"
+    background_edge_bottom="data/weather_gfx/edges/background_pyramid_bottom.png"
+    background_edge_priority="10"  
+	limit_background_image="0"
+    wang_template_file="mods/noitavania/data/wang_tiles/nv_castle.png" 
+    lua_script="mods/noitavania/data/scripts/biomes/nv_castle/main.lua"
+    wang_map_width="256"
+    wang_map_height="256"
+    audio_music_2="crypt"
+    audio_ambience="crypt"
+	noise_biome_edges="0"
+	coarse_map_force_terrain="1"
+	fog_of_war_type="HEAVY_CLEAR_AT_PLAYER"
+	>
+  </Topology>
+
+	<Materials 
+		name="castle" 
+		>
+		<MaterialComponent 
+			_enabled="1" 
+			is_rare="1" 
+			limit_max_y="2048" 
+			limit_min_y="100" 
+			limit_y="0" 
+			material_index="10" 
+			material_max="1.2" 
+			material_min="1.1" 
+			material_name="gold" 
+			rare_polka_is_boxed="1" 
+			rare_polka_probability="0.757143" 
+			rare_polka_radius_high="0.464286" 
+			rare_polka_radius_low="0.1428571" 
+			rare_required_max="10" 
+			rare_required_min="0.371429" 
+			rare_scale_x="0.0214286" 
+			rare_scale_y="0.0214286" 
+			rare_use_perlin="0" 
+			rare_use_polka="1" >
+		</MaterialComponent>
+	 
+		<MaterialComponent 
+			_enabled="1" 
+			is_rare="0" 
+			limit_max_y="2048" 
+			limit_min_y="100" 
+			limit_y="0" 
+			material_index="11" 
+			material_max="3.6" 
+			material_min="0.8" 
+			material_name="castle_brick" 
+			rare_polka_is_boxed="1" 
+			rare_polka_probability="0.2" 
+			rare_polka_radius_high="0.65" 
+			rare_polka_radius_low="0.2" 
+			rare_required_max="10" 
+			rare_required_min="0.2" 
+			rare_scale_x="0.05" 
+			rare_scale_y="0.05" 
+			rare_use_perlin="0" 
+			rare_use_polka="1" >
+		</MaterialComponent>
+  </Materials>
+
+</Biome>
+

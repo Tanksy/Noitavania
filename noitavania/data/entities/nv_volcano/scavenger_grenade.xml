@@ -1,0 +1,13 @@
+<Entity>
+
+  <Base file="data/entities/animals/scavenger_grenade.xml">
+
+    <DamageModelComponent 
+      hp="4.3"
+      max_hp="4.3"
+      >
+    </DamageModelComponent>
+
+  </Base>
+
+</Entity>

@@ -1,0 +1,13 @@
+<Entity>
+
+  <Base file="data/entities/animals/flamer.xml">
+
+    <DamageModelComponent 
+      hp="8.3"
+      max_hp="8.3"
+      >
+    </DamageModelComponent>
+
+  </Base>
+
+</Entity>

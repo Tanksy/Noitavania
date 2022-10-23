@@ -1,0 +1,33 @@
+<Entity>
+  
+  <PixelSceneComponent
+    pixel_scene="mods/noitavania/data/entities/nv_volcano/ballgame/goal.png"
+    offset_x="-15"
+    offset_y="-27"
+    >
+  </PixelSceneComponent>
+
+  <!-- <SpriteComponent
+    image_file="data/debug/circle_16.png"
+    offset_x="8"
+    offset_y="8"
+    >
+  </SpriteComponent> -->
+
+  <CollisionTriggerComponent
+    radius="10"
+    required_tag="prop_physics"
+    >
+  </CollisionTriggerComponent>
+    <!-- destroy_this_entity_when_triggered="0" -->
+
+  <LuaComponent
+    script_collision_trigger_hit="mods/noitavania/data/entities/nv_volcano/ballgame/collision_trigger.lua"
+    execute_every_n_frame="-1"
+    >
+  </LuaComponent>
+    <!-- execute_on_added="0"
+    execute_times="1"
+    execute_every_n_frame="-1" -->
+
+</Entity>

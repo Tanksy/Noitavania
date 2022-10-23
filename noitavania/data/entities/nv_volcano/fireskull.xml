@@ -1,0 +1,13 @@
+<Entity>
+
+  <Base file="data/entities/animals/fireskull.xml">
+
+    <DamageModelComponent 
+      hp="6.0"
+      max_hp="6.0"
+      >
+    </DamageModelComponent>
+
+  </Base>
+
+</Entity>

@@ -1,0 +1,15 @@
+<Sprite filename="mods/noitavania/data/entities_gfx/items/nv_torch.png" >
+	
+  <RectAnimation 
+	name="default" 
+	pos_x="1" 
+	pos_y="1" 
+	offset_x="4" 
+	offset_y="2" 
+	has_offset="1"
+	frame_count="1" 
+	frame_width="17" 
+	frame_height="7" >
+  </RectAnimation>
+  
+</Sprite>

@@ -1,0 +1,6 @@
+data/ragdolls/nv_bee_stinger/head.png
+data/ragdolls/nv_bee_stinger/torso_right.png
+data/ragdolls/nv_bee_stinger/torso_left.png
+data/ragdolls/nv_bee_stinger/right_leg.png
+data/ragdolls/nv_bee_stinger/left_leg.png
+data/ragdolls/nv_bee_stinger/wing.png

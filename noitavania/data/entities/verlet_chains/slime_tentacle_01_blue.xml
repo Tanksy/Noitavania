@@ -1,0 +1,18 @@
+<Entity>
+
+	<InheritTransformComponent>
+	</InheritTransformComponent>
+
+    <VerletPhysicsComponent
+    	stiffness="1.25"
+    	num_points="5"
+		velocity_dampening="0.8"
+    	resting_distance="1.0" >
+    </VerletPhysicsComponent>
+
+	<Base file="mods/noitavania/data/entities/verlet_chains/pieces/slime_tentacle_piece_blue.xml" />
+	<Base file="mods/noitavania/data/entities/verlet_chains/pieces/slime_tentacle_piece_blue.xml" />
+	<Base file="mods/noitavania/data/entities/verlet_chains/pieces/slime_tentacle_piece_blue.xml" />
+	<Base file="mods/noitavania/data/entities/verlet_chains/pieces/slime_tentacle_piece_thin_blue.xml" />
+
+</Entity>

@@ -1,0 +1,12 @@
+<Entity>
+
+  <Base file="data/entities/particles/image_emitters/wand_effect.xml">
+
+    <ParticleEmitterComponent
+      emitted_material_name="lava"
+      >
+    </ParticleEmitterComponent>
+
+  </Base>
+
+</Entity>

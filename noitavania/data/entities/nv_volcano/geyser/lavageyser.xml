@@ -1,0 +1,44 @@
+<Entity>
+
+  <PixelSceneComponent
+    pixel_scene="mods/noitavania/data/entities/nv_volcano/geyser/lavageyser_small.png"
+    offset_x="-22"
+    offset_y="-29"
+    >
+  </PixelSceneComponent>
+
+  <MaterialInventoryComponent />
+
+  <MaterialSuckerComponent
+    material_type="0"
+    num_cells_sucked_per_frame="5"
+    barrel_size="1000"
+    >
+  </MaterialSuckerComponent>
+
+  <ParticleEmitterComponent 
+		is_emitting="0"
+		emitted_material_name="lava"
+		x_pos_offset_min="0"
+		x_pos_offset_max="0"
+		y_pos_offset_min="0"
+		y_pos_offset_max="0"
+		x_vel_min="-30"
+		x_vel_max="30"
+		y_vel_min="-1200"
+		y_vel_max="-1000"
+		count_min="8"
+		count_max="10"
+		emission_interval_min_frames="5"
+		emission_interval_max_frames="5"
+    use_material_inventory="1"
+    >
+	</ParticleEmitterComponent>
+
+  <LuaComponent
+    script_source_file="mods/noitavania/data/entities/nv_volcano/geyser/lavageyser.lua"
+    execute_every_n_frame="200"
+    >
+  </LuaComponent>
+
+</Entity>

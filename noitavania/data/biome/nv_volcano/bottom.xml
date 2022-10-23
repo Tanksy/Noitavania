@@ -1,0 +1,32 @@
+<Biome>
+
+  <Topology 
+    name="Volcano"
+    type="BIOME_WANG_TILE"
+    background_image="mods/noitavania/data/biome_gfx/background_volcano.png"
+    background_edge_left="mods/noitavania/data/biome_gfx/edges/volcano_inside_background_left.png"
+    background_edge_top="mods/noitavania/data/biome_gfx/edges/volcano_inside_background_top.png"
+    background_edge_right="mods/noitavania/data/biome_gfx/edges/volcano_inside_background_right.png"
+    background_edge_bottom="mods/noitavania/data/biome_gfx/edges/volcano_inside_background_bottom.png"
+    lua_script="mods/noitavania/data/scripts/biomes/nv_volcano/bottom.lua"
+	  limit_background_image="0"
+	  noise_biome_edges="0"
+    wang_template_file="" 
+    wang_map_width="256"
+    wang_map_height="256"
+    audio_music_2="coalmine"
+    audio_ambience="cave"
+    color_correction_r="0.0"
+    color_correction_g="1.0"
+    color_correction_b="0.1"
+    color_correction_lerp="0.1"
+	  >
+  </Topology>
+
+  <Materials 
+    name="volcano_bottom" 
+     >
+  </Materials>
+
+</Biome>
+

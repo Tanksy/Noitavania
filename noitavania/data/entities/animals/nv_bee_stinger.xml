@@ -1,0 +1,120 @@
+<Entity tags="ui_use_raw_name" name="Soldier Bee">
+	
+	<Base file="data/entities/base_enemy_flying.xml" >
+		<ItemChestComponent level="5" > </ItemChestComponent>
+
+		<AnimalAIComponent 
+			_enabled="1" 
+			preferred_job="JobDefault"
+			attack_melee_damage_min="2" 
+			attack_melee_damage_max="2"
+			attack_dash_enabled="1"
+			attack_dash_damage="3"
+			attack_melee_impulse_multiplier="120" 
+			attack_dash_distance="60"
+			creature_detection_range_x="400"
+			creature_detection_range_y="400"
+			food_material="blood"
+			needs_food="1"
+			sense_creatures="1"
+			attack_ranged_enabled="0"
+			can_fly="1" 
+			can_walk="0" >
+		</AnimalAIComponent>
+
+		<DamageModelComponent 
+			ragdoll_filenames_file="data/ragdolls/nv_bee_stinger/filenames.txt"
+			hp="10"
+			max_hp="10"
+			fire_probability_of_ignition="0"
+			ragdoll_offset_y="-3"
+			air_needed="0"
+			blood_material="blood_fading"
+			blood_spray_material="blood_fading"
+			>
+		</DamageModelComponent>
+
+		<SpriteComponent 
+			image_file="data/enemies_gfx/nv_bee_stinger.xml" 
+			offset_x="0"
+			offset_y="0"
+			>
+		</SpriteComponent>
+
+		<PathFindingComponent
+			can_walk="0"
+			can_fly="1" >
+		</PathFindingComponent>
+
+		<PathFindingGridMarkerComponent
+			marker_work_flag="16" >
+		</PathFindingGridMarkerComponent>
+		
+		<GenomeDataComponent 
+			herd_id="fly"
+			food_chain_rank="10"
+			is_predator="1" >
+		</GenomeDataComponent>
+		
+		<CharacterPlatformingComponent 
+			jump_velocity_y="-12" 
+			run_velocity="18"  
+			fly_speed_max_up="300"
+			fly_speed_max_down="300"
+			fly_speed_mult="80"
+			fly_speed_change_spd="1"
+    		pixel_gravity="200" 
+			fly_velocity_x="80"
+			fly_velocity_y="80">
+		</CharacterPlatformingComponent>
+
+		<CameraBoundComponent
+			max_count="60"
+			distance="160000">
+		</CameraBoundComponent>
+	
+		<HitboxComponent 
+			_enabled="1" 
+			aabb_max_x="6" 
+			aabb_max_y="8" 
+			aabb_min_x="-6" 
+			aabb_min_y="-6" >
+		</HitboxComponent>
+		
+		<CharacterDataComponent
+			collision_aabb_min_x="-4.0" 
+			collision_aabb_max_x="4.0" 
+			collision_aabb_min_y="-11" 
+			collision_aabb_max_y="3"
+			mass="1.0"
+			>
+		</CharacterDataComponent>
+	</Base>
+
+	<AudioLoopComponent
+		file="data/audio/Desktop/animals.bank"
+		event_name="animals/wing_flap_insect/movement_loop"
+		set_speed_parameter="1"
+		auto_play="1">
+	</AudioLoopComponent>
+	
+	<LuaComponent
+	    execute_on_removed="0"
+	    execute_every_n_frame="-1"
+		script_collision_trigger_hit="data/scripts/animals/nv_bee_stinger_fucking_dies.lua"
+	    remove_after_executed="1">
+  	</LuaComponent>
+	
+	<CollisionTriggerComponent
+    	width="10"
+    	height="10"
+    	radius="10"
+		required_tag="mortal"
+    	timer_for_destruction="0" 
+		destroy_this_entity_when_triggered="0"
+		remove_component_when_triggered="1"
+		>
+    </CollisionTriggerComponent>
+
+</Entity>
+

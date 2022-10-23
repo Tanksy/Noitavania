@@ -1,0 +1,13 @@
+<Entity>
+
+  <Base file="data/entities/animals/bigzombietorso.xml">
+
+    <DamageModelComponent 
+      hp="8.0"
+      max_hp="8.0"
+      >
+    </DamageModelComponent>
+
+  </Base>
+
+</Entity>

@@ -1,0 +1,110 @@
+<Entity tags="ui_use_raw_name" name="Wriggly Larva">
+  
+	<Base file="data/entities/base_enemy_basic.xml" >
+		<ItemChestComponent level="0" > </ItemChestComponent>
+
+		<AnimalAIComponent 
+			_enabled="1" 
+			preferred_job="JobDefault"
+			attack_melee_damage_min="0.2" 
+			attack_melee_damage_max="0.4"
+			needs_food="1"
+			food_material="honey"
+			attack_ranged_enabled="0"
+			can_fly="0" 
+			attack_melee_max_distance="10"
+			attack_melee_action_frame="3"
+			>
+		</AnimalAIComponent>
+		
+		<DamageModelComponent 
+			ragdoll_material="nv_meat_poison"
+			ragdoll_filenames_file="data/ragdolls/nv_hivemaggot/filenames.txt" 
+			ragdoll_offset_y="-1"
+			blood_material="poison"
+			blood_spray_material="poison"
+			blood_sprite_directional="data/particles/bloodsplatters/bloodsplatter_directional_purple_$[1-3].xml"
+			blood_sprite_large="data/particles/bloodsplatters/bloodsplatter_purple_$[1-3].xml"
+			hp="1"
+			max_hp="1"
+			air_needed="0"
+			>
+		</DamageModelComponent>
+
+		<SpriteComponent 
+			image_file="data/enemies_gfx/nv_hivemaggot.xml" 
+			offset_x="10"
+			offset_y="14" >
+		</SpriteComponent>
+
+		<PathFindingComponent
+		    distance_to_reach_node_x="20"
+		    distance_to_reach_node_y="20"
+			frames_to_get_stuck="20"
+			can_swim_on_surface="0"
+			can_dive="1"
+			can_jump="0" >
+		</PathFindingComponent>
+
+		<PathFindingGridMarkerComponent
+			marker_work_flag="16" >
+		</PathFindingGridMarkerComponent>
+		
+		<GenomeDataComponent 
+			herd_id="fly"
+			food_chain_rank="10"
+			is_predator="1" >
+		</GenomeDataComponent>
+		
+		<CharacterPlatformingComponent 
+			jump_velocity_y="-5" 
+			run_velocity="10"
+			swim_down_buoyancy_coeff="0"
+			swim_drag="1"
+			swim_extra_horizontal_drag="1"
+			swim_idle_buoyancy_coeff="0"
+			swim_up_buoyancy_coeff="0"
+			>
+		</CharacterPlatformingComponent>
+        
+        <HitboxComponent 
+			_enabled="1" 
+			aabb_min_x="-5.5" 
+			aabb_max_x="5.5" 
+			aabb_min_y="-4" 
+			aabb_max_y="2" 
+			is_enemy="1" 
+			is_item="0" 
+			is_player="0" >
+		</HitboxComponent>
+		
+		<CharacterDataComponent
+			collision_aabb_min_x="-1" 
+			collision_aabb_max_x="1" 
+			collision_aabb_min_y="-2" 
+			collision_aabb_max_y="-1" 
+			buoyancy_check_offset_y="-1"
+			mass="0.4"
+			climb_over_y="4"
+			>
+		</CharacterDataComponent>
+
+	</Base>
+	
+	<CrawlerAnimalComponent
+		collision_damage="0.3"
+		collisiom_damage_radius="10"
+		collision_damage_frames_between="240"
+		attack_from_ceiling_check_every_n_frames="600"
+		attack_from_ceiling_check_ray_length="128"
+		give_up_time="999"
+		give_up_area_radius="0"
+		speed="0.15"
+		gravity="600"
+		>
+	</CrawlerAnimalComponent>
+
+	<VariableStorageComponent _tags="no_gold_drop" />
+
+</Entity>
+
