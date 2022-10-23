@@ -9,14 +9,13 @@ Noitavania is a vanilla-friendly (kinda) map expansion project that fills once e
 * Adds mini-temples to the expanded side areas to encourage and reward the brave explorer.
 * Adds a new mini-boss with custom sprites, found deep in the new Castle biome. (more mini-bosses to come!)
 
-## New biomes added
+### New biomes added
 Sewers, Storage Depot, Cryo-Storage, Volcano, Space, Toxic Dump, Cursed Tunnel, Dark Castle, Hive, Forgotten Tunnels, Ruined Bunker _and more on the way._
 
-[1.21 Map Capture](https://easyzoom.com/image/243831)
+[1.21 Map Capture](https://easyzoom.com/image/243831) (Big thanks to mzx987 for the 1.21 Map Capture!)
+
 
 [1.19 Nightmare/NG+ Map Capture](https://easyzoom.com/image/243834) (OLD and missing some spots, but mostly accurate)
-
-(Big thanks to mzx987 for the 1.21 Map Capture!)
 
 Works with Horscht's [Location Tracker](https://steamcommunity.com/sharedfiles/filedetails/?id=2227903743)!
 
