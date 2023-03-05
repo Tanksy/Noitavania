@@ -140,12 +140,13 @@ function spawn_all_shopitems( x, y )
 end
 
 function spawn_workshop( x, y )
-	EntityLoad( "data/entities/buildings/workshop.xml", x, y )
+	EntityLoad("mods/noitavania/data/entities/buildings/nv_side_workshop.xml", x+32, y)
 end
 
 function spawn_workshop_extra( x, y )
-	EntityLoad( "data/entities/buildings/workshop_allow_mods.xml", x, y )
+	EntityLoad( "mods/noitavania/data/entities/buildings/nv_side_workshop_allow_mods.xml", x+32, y )
 end
+
 
 function spawn_motordoor( x, y )
 	EntityLoad( "data/entities/props/physics_templedoor2.xml", x, y )
